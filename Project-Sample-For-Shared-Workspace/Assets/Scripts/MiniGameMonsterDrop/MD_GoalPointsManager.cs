@@ -4,7 +4,7 @@ namespace MiniGame_MonsterDrrop
 {
     public class MD_GoalPointsManager : MonoBehaviour
     {
-        public int percentHit;
+        public int jackpotHit;
 
         public GameObject rightHit;
         public GameObject leftHit;
@@ -17,9 +17,9 @@ namespace MiniGame_MonsterDrrop
 
         void BuildPoints()
         {
-            rightHit.GetComponent<MD_GoalPoint>().value = percentHit;
-            leftHit.GetComponent<MD_GoalPoint>().value = percentHit;
-            centerHit.GetComponent<MD_GoalPoint>().value = percentHit + 10;
+            rightHit.GetComponent<MD_GoalPoint>().value = jackpotHit;
+            leftHit.GetComponent<MD_GoalPoint>().value = jackpotHit;
+            centerHit.GetComponent<MD_GoalPoint>().value = (int)(jackpotHit * 1.5f);
         }
     }
 }

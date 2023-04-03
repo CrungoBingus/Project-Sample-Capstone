@@ -23,7 +23,7 @@ namespace MiniGame_MonsterDrrop
             endgameUI.SetActive(true);
 
             _gameResultValue = collision.gameObject.GetComponent<MD_GoalPoint>().value;
-            text.text = "Target Accuracy\n----------\n" + _gameResultValue.ToString();
+            text.text = "Jackpot\n----------\n" + _gameResultValue.ToString();
 
             Time.timeScale = 0.02f;
             Time.fixedDeltaTime = 0.02f;

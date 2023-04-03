@@ -27,9 +27,9 @@ namespace MiniGame_MonsterDrrop
 
         void SetData()
         {
-            c = Color.Lerp(Color.red, Color.green, value / 100f);
+            c = Color.Lerp(Color.red, Color.green, value / 10000f);
 
-            _textHolder.text = value.ToString() + "%";
+            _textHolder.text = value.ToString();
             _textHolder.color = c;
 
             bgr.color = c;

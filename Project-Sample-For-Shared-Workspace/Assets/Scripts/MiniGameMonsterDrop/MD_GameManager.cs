@@ -17,7 +17,7 @@ namespace MiniGame_MonsterDrrop
         public GameObject[] fields;
         int _index = 0;
 
-        int _percentValue = 50;
+        int _jackpotValue = 1500;
 
         public static MD_GameManager Instance { get; private set; }
 
@@ -56,8 +56,8 @@ namespace MiniGame_MonsterDrrop
                 posToSpawn = new Vector2(0, posToSpawn.y - gameDistance);
                 GameObject m_goal = Instantiate(goal, posToSpawn, Quaternion.identity);
 
-                m_goal.GetComponent<MD_GoalPointsManager>().percentHit = _percentValue;
-                _percentValue += 15;
+                m_goal.GetComponent<MD_GoalPointsManager>().jackpotHit = _jackpotValue;
+                _jackpotValue *= 2;
 
                 posToSpawn = new Vector2(0, posToSpawn.y - fieldDistance);
             }

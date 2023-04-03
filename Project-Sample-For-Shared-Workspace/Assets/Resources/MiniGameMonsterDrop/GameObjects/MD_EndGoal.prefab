@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgr: {fileID: 6863888901326082421}
-  value: 75
+  value: 10000
 --- !u!61 &2410332248925789289
 BoxCollider2D:
   m_ObjectHideFlags: 0
